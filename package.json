@@ -154,6 +154,8 @@
     "intl": "^1.2.5",
     "rxjs": "^5.4.2",
     "systemjs": "0.20.14",
-    "zone.js": "0.8.12"
+    "zone.js": "0.8.12",
+    "angular-cesium": "0.0.11",
+    "cesium": "1.35.2"
   }
 }
