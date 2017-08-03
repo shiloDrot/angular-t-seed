@@ -26,7 +26,6 @@ export class ProjectConfig extends SeedConfig {
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
       {src: 'cesium/Build/Cesium/Cesium.js', inject: 'libs'},
-      {src: 'cesium/Build/Cesium/Widgets/widgets.css', inject: true},
     ];
 
     // Add `local` third-party libraries to be injected/bundled.
