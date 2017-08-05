@@ -31,7 +31,8 @@ export class ProjectConfig extends SeedConfig {
     // Add `local` third-party libraries to be injected/bundled.
     this.APP_ASSETS = [
       // {src: `${this.APP_SRC}/your-path-to-lib/libs/jquery-ui.js`, inject: true, vendor: false}
-      // {src: `${this.CSS_SRC}/path-to-lib/test-lib.css`, inject: true, vendor: false},
+      //semantic ui css
+      {src: `${this.CSS_SRC}/semantic2.2.9.min.css`, inject: true, vendor: false},
     ];
 
     this.ROLLUP_INCLUDE_DIR = [
@@ -53,8 +54,6 @@ export class ProjectConfig extends SeedConfig {
         defaultExtension: 'js'
       }
     }];
-
-
     additionalPackages.push({
       name:'angular-cesium',
       path: 'node_modules/angular-cesium/bundles/angular-cesium.umd.js'
@@ -68,7 +67,7 @@ export class ProjectConfig extends SeedConfig {
     additionalPackages.push({
       name:'primitive-primitives',
       path: 'node_modules/primitive-primitives/dist/main.js'
-    })
+    });
 
     additionalPackages.push({
       name:'json-string-mapper',
@@ -89,6 +88,13 @@ export class ProjectConfig extends SeedConfig {
       name:'geodesy',
       path: 'node_modules/geodesy/npm.js'
     });
+
+    //ng2 semantic ui
+    additionalPackages.push({
+      name:'ng2-semantic-ui',
+      path: 'node_modules/ng2-semantic-ui/bundles/ng2-semantic-ui.umd.min.js'
+    });
+
     this.addPackagesBundles(additionalPackages);
 
     /* Add proxy middleware */
