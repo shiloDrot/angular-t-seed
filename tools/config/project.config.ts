@@ -95,6 +95,21 @@ export class ProjectConfig extends SeedConfig {
       path: 'node_modules/ng2-semantic-ui/bundles/ng2-semantic-ui.umd.min.js'
     });
 
+    //ng2 redux
+    additionalPackages.push({
+      name: '@angular-redux/store',
+      path: 'node_modules/@angular-redux/store/lib/src/',
+      packageMeta: {
+        defaultExtension: 'js',
+        main: 'index.js'
+      }
+    });
+
+    additionalPackages.push({
+      name: 'redux',
+      path: 'node_modules/redux/dist/redux.min.js'
+    });
+
     this.addPackagesBundles(additionalPackages);
 
     /* Add proxy middleware */

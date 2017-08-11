@@ -4,7 +4,12 @@
     <a class="item" suiTabHeader="2">Second</a>
     <a class="item" suiTabHeader="3">Third</a>
   </div>
-  <div class="ui bottom attached segment" suiTabContent="1">First tab!</div>
+  <div class="ui bottom attached segment" suiTabContent="1">
+    <h1>Redux example</h1>
+    Count: {{ count }}
+    <button (click)="increment()">+</button>
+    <button (click)="decrement()">-</button>
+  </div>
   <div class="ui bottom attached segment" suiTabContent="2">Second tab!</div>
   <div class="ui bottom attached segment" suiTabContent="3">Third tab!</div>
 </sui-tabset>
