@@ -61,7 +61,7 @@ export class ProjectConfig extends SeedConfig {
 
     additionalPackages.push({
       name:'rxjs',
-      path: 'node_modules/rxjs/Rx.js'
+      path: 'node_modules/rxjs/bundles/Rx.js'
     });
 
     additionalPackages.push({
